@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - Arnaud Cissé</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#10b981'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        input, textarea {
+            outline: none;
+        }
+        input:focus, textarea:focus {
+            border-color: #3b82f6;
+        }
+        .custom-checkbox {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #d1d5db;
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+        }
+        .custom-checkbox:checked {
+            background-color: #3b82f6;
+            border-color: #3b82f6;
+        }
+        .custom-checkbox:checked::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 6px;
+            width: 6px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+        .policy-section {
+            transition: all 0.3s ease;
+        }
+        .policy-section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
+        
+
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="fixed inset-0 bg-white z-40 hidden flex-col pt-20 px-6">
+        <a href="https://readdy.ai/home/38a1af55-18de-41f1-b39f-00477944f3d9/e19c84e4-8cef-4645-a8d1-cec90601fb2f" data-readdy="true" class="py-4 text-lg font-medium text-gray-700 border-b border-gray-100">Accueil</a>
+        <a href="#" class="py-4 text-lg font-medium text-gray-700 border-b border-gray-100">À propos</a>
+        <a href="#" class="py-4 text-lg font-medium text-gray-700 border-b border-gray-100">Compétences</a>
+        <a href="#" class="py-4 text-lg font-medium text-gray-700 border-b border-gray-100">Portfolio</a>
+        <a href="#" class="py-4 text-lg font-medium text-gray-700">Contact</a>
+    </div>
+
+    <!-- Back Button -->
+    <div class="pt-24 pb-6 container mx-auto px-4">
+        <a href="index.html" data-readdy="true" class="inline-flex items-center text-primary hover:underline">
+            <i class="ri-arrow-left-line mr-2"></i>
+            Retour à l'accueil
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 pb-20">
+        <!-- Page Header -->
+        <div class="mb-12 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Politique de Confidentialité</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Chez Arnaud Cissé, nous accordons une importance capitale à la protection de vos données personnelles. 
+                Cette politique détaille comment nous collectons, utilisons et protégeons vos informations.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4 justify-center">
+                <a href="#collecte" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-primary hover:text-white transition-colors">Collecte des données</a>
+                <a href="#utilisation" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-primary hover:text-white transition-colors">Utilisation des données</a>
+                <a href="#protection" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-primary hover:text-white transition-colors">Protection des données</a>
+                <a href="#droits" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-primary hover:text-white transition-colors">Droits des utilisateurs</a>
+                <a href="#cookies" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-primary hover:text-white transition-colors">Cookies</a>
+                <a href="#rgpd" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-primary hover:text-white transition-colors">Conformité RGPD</a>
+            </div>
+        </div>
+
+        <!-- Policy Content -->
+        <div class="max-w-4xl mx-auto space-y-10">
+            <!-- Introduction -->
+            <section class="bg-white p-8 rounded-xl shadow-sm policy-section">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Introduction et portée</h2>
+                <p class="text-gray-700 mb-4">
+                    La présente politique de confidentialité s'applique à l'ensemble des services proposés par Arnaud Cissé, 
+                    développeur web full stack, et concerne la collecte et l'utilisation des données personnelles des utilisateurs 
+                    de notre site web et de nos services.
+                </p>
+                <p class="text-gray-700">
+                    Cette politique a été mise à jour le 2 mai 2025 et peut être modifiée à tout moment. Nous vous invitons 
+                    à la consulter régulièrement pour rester informé des éventuelles modifications.
+                </p>
+            </section>
+            <!-- Data Collection -->
+            <section id="collecte" class="bg-white p-8 rounded-xl shadow-sm policy-section">
+                <div class="flex items-start mb-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="ri-database-2-line ri-lg text-primary"></i>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-900">Collecte des données</h2>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    Nous collectons différents types de données personnelles lorsque vous interagissez avec notre site web 
+                    ou utilisez nos services. Ces données peuvent inclure :
+                </p>
+                <ul class="space-y-3 text-gray-700 mb-6">
+                    <li class="flex items-start">
+                        <i class="ri-checkbox-circle-line text-primary mr-2 mt-1"></i>
+                        <span><strong>Données d'identification</strong> : nom, prénom, adresse email, numéro de téléphone.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="ri-checkbox-circle-line text-primary mr-2 mt-1"></i>
+                        <span><strong>Données de communication</strong> : messages envoyés via notre formulaire de contact, correspondances par email.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="ri-checkbox-circle-line text-primary mr-2 mt-1"></i>
+                        <span><strong>Données techniques</strong> : adresse IP, type et version du navigateur, système d'exploitation, informations sur l'appareil.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="ri-checkbox-circle-line text-primary mr-2 mt-1"></i>
+                        <span><strong>Données d'utilisation</strong> : pages visitées, temps passé sur le site, liens cliqués, préférences de navigation.</span>
+                    </li>
+                </ul>
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <p class="text-gray-700 text-sm">
+                        <strong>Note</strong> : Nous ne collectons que les données nécessaires à la fourniture de nos services 
+                        et à l'amélioration de votre expérience utilisateur. Aucune donnée sensible (orientation politique, 
+                        religieuse, santé, etc.) n'est collectée.
+                    </p>
+                </div>
+            </section>
+            <!-- Data Usage -->
+            <section id="utilisation" class="bg-white p-8 rounded-xl shadow-sm policy-section">
+                <div class="flex items-start mb-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="ri-file-list-3-line ri-lg text-secondary"></i>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-900">Utilisation des données</h2>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    Les données personnelles que nous collectons sont utilisées pour les finalités suivantes :
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-medium text-gray-900 mb-2">Communication</h3>
+                        <p class="text-gray-700 text-sm">
+                            Répondre à vos demandes, vous contacter au sujet de projets ou de services, 
+                            vous envoyer des informations importantes concernant notre activité.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-medium text-gray-900 mb-2">Amélioration des services</h3>
+                        <p class="text-gray-700 text-sm">
+                            Analyser l'utilisation de notre site pour améliorer son contenu, sa structure 
+                            et l'expérience utilisateur globale.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-medium text-gray-900 mb-2">Exécution contractuelle</h3>
+                        <p class="text-gray-700 text-sm">
+                            Fournir les services demandés, gérer la relation client, assurer le suivi des projets 
+                            et la facturation.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-medium text-gray-900 mb-2">Sécurité</h3>
+                        <p class="text-gray-700 text-sm">
+                            Protéger notre site contre les activités frauduleuses, les abus et les menaces de sécurité.
+                        </p>
+                    </div>
+                </div>
+                <p class="text-gray-700">
+                    Nous ne vendons jamais vos données personnelles à des tiers. Nous pouvons partager certaines données 
+                    avec des prestataires de services (hébergement, analyse web, etc.) qui nous aident à fournir nos services, 
+                    mais uniquement dans le cadre nécessaire à l'exécution de leurs missions.
+                </p>
+            </section>
+            <!-- Data Protection -->
+            <section id="protection" class="bg-white p-8 rounded-xl shadow-sm policy-section">
+                <div class="flex items-start mb-4">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="ri-shield-check-line ri-lg text-purple-600"></i>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-900">Protection des données</h2>
+                </div>
+                <p class="text-gray-700 mb-6">
+                    Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données 
+                    personnelles contre tout accès non autorisé, modification, divulgation ou destruction.
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                    <h3 class="font-medium text-gray-900 mb-4">Nos mesures de sécurité incluent :</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="ri-lock-line text-purple-600 mr-2 mt-1"></i>
+                            <span>Chiffrement des données sensibles (HTTPS, SSL/TLS)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-shield-line text-purple-600 mr-2 mt-1"></i>
+                            <span>Protection contre les injections SQL et les attaques XSS</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-user-settings-line text-purple-600 mr-2 mt-1"></i>
+                            <span>Contrôle d'accès strict aux données personnelles</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-refresh-line text-purple-600 mr-2 mt-1"></i>
+                            <span>Mises à jour régulières des systèmes de sécurité</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ri-file-damage-line text-purple-600 mr-2 mt-1"></i>
+                            <span>Sauvegardes régulières et procédures de récupération</span>
+                        </li>
+                    </ul>
+                </div>
+                <p class="text-gray-700">
+                    Malgré toutes les mesures mises en place, aucune méthode de transmission ou de stockage électronique 
+                    n'est totalement sécurisée. Nous nous engageons à vous notifier rapidement en cas de violation de 
+                    données susceptible d'affecter vos informations personnelles, conformément aux obligations légales.
+                </p>
+            </section>
+
+            <!-- User Rights -->
+            <section id="droits" class="bg-white p-8 rounded-xl shadow-sm policy-section">
+                <div class="flex items-start mb-4">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="ri-user-settings-line ri-lg text-yellow-600"></i>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-900">Droits des utilisateurs</h2>
+                </div>
+                <p class="text-gray-700 mb-6">
+                    Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants 
+                    concernant vos données personnelles :
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div class="border border-gray-200 p-4 rounded-lg">
+                        <h3 class="font-medium text-gray-900 mb-2">Droit d'accès</h3>
+                        <p class="text-gray-700 text-sm">
+                            Vous pouvez demander une copie de vos données personnelles que nous détenons.
+                        </p>
+                    </div>
+                    <div class="border border-gray-200 p-4 rounded-lg">
+                        <h3 class="font-medium text-gray-900 mb-2">Droit de rectification</h3>
+                        <p class="text-gray-700 text-sm">
+                            Vous pouvez demander la correction de données inexactes ou incomplètes.
+                        </p>
+                    </div>
+                    <div class="border border-gray-200 p-4 rounded-lg">
+                        <h3 class="font-medium text-gray-900 mb-2">Droit à l'effacement</h3>
+                        <p class="text-gray-700 text-sm">
+                            Vous pouvez demander la suppression de vos données personnelles dans certaines circonstances.
+                        </p>
+                    </div>
+                    <div class="border border-gray-200 p-4 rounded-lg">
+                        <h3 class="font-medium text-gray-900 mb-2">Droit à la limitation</h3>
+                        <p class="text-gray-700 text-sm">
+                            Vous pouvez demander la restriction du traitement de vos données.
+                        </p>
+                    </div>
+                    <div class="border border-gray-200 p-4 rounded-lg">
+                        <h3 class="font-medium text-gray-900 mb-2">Droit à la portabilité</h3>
+                        <p class="text-gray-700 text-sm">
+                            Vous pouvez demander à recevoir vos données dans un format structuré et courant.
+                        </p>
+                    </div>
+                    <div class="border border-gray-200 p-4 rounded-lg">
+                        <h3 class="font-medium text-gray-900 mb-2">Droit d'opposition</h3>
+                        <p class="text-gray-700 text-sm">
+                            Vous pouvez vous opposer au traitement de vos données dans certaines situations.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-yellow-50 p-4 rounded-lg mb-4">
+                    <p class="text-gray-700">
+                        Pour exercer l'un de ces droits, veuillez nous contacter à l'adresse email suivante : 
+                        <a href="mailto:privacy@arnaudcisse.fr" class="text-primary hover:underline">privacy@arnaudcisse.fr</a>
+                    </p>
+                </div>
+                <p class="text-gray-700">
+                    Nous nous efforcerons de répondre à votre demande dans un délai d'un mois. Si vous n'êtes pas satisfait 
+                    de notre réponse, vous avez le droit de déposer une plainte auprès de la Commission Nationale de 
+                    l'Informatique et des Libertés (CNIL).
+                </p>
+            </section>
+
+            <!-- Cookies -->
+            <section id="cookies" class="bg-white p-8 rounded-xl shadow-sm policy-section">
+                <div class="flex items-start mb-4">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="ri-cookie-line ri-lg text-red-600"></i>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-900">Cookies et traceurs</h2>
+                </div>
+                <p class="text-gray-700 mb-6">
+                    Notre site utilise des cookies et technologies similaires pour améliorer votre expérience de navigation, 
+                    analyser l'utilisation du site et personnaliser le contenu.
+                </p>
+                <div class="overflow-x-auto mb-6">
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="border border-gray-200 p-3 text-left text-gray-700">Type de cookie</th>
+                                <th class="border border-gray-200 p-3 text-left text-gray-700">Finalité</th>
+                                <th class="border border-gray-200 p-3 text-left text-gray-700">Durée</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-200 p-3 text-gray-700">Cookies essentiels</td>
+                                <td class="border border-gray-200 p-3 text-gray-700">Nécessaires au fonctionnement du site</td>
+                                <td class="border border-gray-200 p-3 text-gray-700">Session</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="border border-gray-200 p-3 text-gray-700">Cookies analytiques</td>
+                                <td class="border border-gray-200 p-3 text-gray-700">Analyse de l'utilisation du site (Google Analytics)</td>
+                                <td class="border border-gray-200 p-3 text-gray-700">13 mois</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-200 p-3 text-gray-700">Cookies de préférences</td>
+                                <td class="border border-gray-200 p-3 text-gray-700">Mémorisation de vos préférences</td>
+                                <td class="border border-gray-200 p-3 text-gray-700">6 mois</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    Vous pouvez contrôler et gérer les cookies via les paramètres de votre navigateur. Veuillez noter que 
+                    la désactivation de certains cookies peut affecter le fonctionnement du site.
+                </p>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h3 class="font-medium text-gray-900 mb-2">Comment gérer les cookies ?</h3>
+                    <p class="text-gray-700 text-sm mb-3">
+                        Vous pouvez à tout moment modifier vos préférences en matière de cookies en cliquant sur le bouton 
+                        "Paramètres des cookies" situé en bas de page.
+                    </p>
+                    <p class="text-gray-700 text-sm">
+                        Pour plus d'informations sur la gestion des cookies dans votre navigateur, consultez les liens suivants :
+                    </p>
+                    <ul class="mt-2 space-y-1 text-sm">
+                        <li><a href="#" class="text-primary hover:underline">Chrome</a></li>
+                        <li><a href="#" class="text-primary hover:underline">Firefox</a></li>
+                        <li><a href="#" class="text-primary hover:underline">Safari</a></li>
+                        <li><a href="#" class="text-primary hover:underline">Edge</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- GDPR Compliance -->
+            <section id="rgpd" class="bg-white p-8 rounded-xl shadow-sm policy-section">
+                <div class="flex items-start mb-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="ri-government-line ri-lg text-primary"></i>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-900">Conformité RGPD</h2>
+                </div>
+                <p class="text-gray-700 mb-6">
+                    Nous nous engageons à respecter pleinement le Règlement Général sur la Protection des Données (RGPD) 
+                    et à mettre en œuvre toutes les mesures nécessaires pour assurer la conformité de nos traitements.
+                </p>
+                <div class="space-y-4 mb-6">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-medium text-gray-900 mb-2">Base légale des traitements</h3>
+                        <p class="text-gray-700 text-sm">
+                            Nous traitons vos données sur la base de votre consentement, de l'exécution d'un contrat, 
+                            de nos obligations légales ou de notre intérêt légitime, selon la nature du traitement.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-medium text-gray-900 mb-2">Transferts de données</h3>
+                        <p class="text-gray-700 text-sm">
+                            Vos données sont principalement stockées et traitées au sein de l'Union Européenne. Si un transfert 
+                            hors UE est nécessaire, nous mettons en place des garanties appropriées conformément au RGPD.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-medium text-gray-900 mb-2">Délégué à la protection des données</h3>
+                        <p class="text-gray-700 text-sm">
+                            Bien que non obligatoire pour notre activité, nous avons désigné un responsable de la protection 
+                            des données que vous pouvez contacter pour toute question relative à la protection de vos données.
+                        </p>
+                    </div>
+                </div>
+                <div class="border-t border-gray-200 pt-6">
+                    <h3 class="font-medium text-gray-900 mb-3">Contact pour les questions relatives à la protection des données</h3>
+                    <p class="text-gray-700 mb-4">
+                        Pour toute question concernant cette politique de confidentialité ou vos données personnelles, 
+                        veuillez nous contacter à :
+                    </p>
+                    <div class="bg-blue-50 p-4 rounded-lg inline-block">
+                        <p class="text-gray-700">
+                            <strong>Email</strong> : <a href="mailto:privacy@arnaudcisse.fr" class="text-primary hover:underline">privacy@arnaudcisse.fr</a>
+                        </p>
+                        <p class="text-gray-700">
+                            <strong>Adresse</strong> : 123 Avenue des Développeurs, 75001 Paris, France
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Final Section -->
+            <section class="bg-white p-8 rounded-xl shadow-sm policy-section">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Modifications de la politique de confidentialité</h2>
+                <p class="text-gray-700 mb-4">
+                    Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Toute 
+                    modification sera publiée sur cette page avec une date de mise à jour.
+                </p>
+                <p class="text-gray-700 mb-6">
+                    Pour les modifications importantes, nous vous informerons par email ou par une notification visible 
+                    sur notre site web.
+                </p>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-gray-700 text-center">
+                        Dernière mise à jour : <strong>2 mai 2025</strong>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-['Pacifico'] text-white">Arnaud Cissé</a>
+                    <p class="mt-2 text-gray-400">Développeur Web Full Stack</p>
+                </div>
+                <div class="flex flex-wrap gap-8">
+                    <div>
+                        <h4 class="font-semibold mb-3">Navigation</h4>
+                        <ul class="space-y-2">
+                            <li><a href="https://readdy.ai/home/38a1af55-18de-41f1-b39f-00477944f3d9/e19c84e4-8cef-4645-a8d1-cec90601fb2f" data-readdy="true" class="text-gray-400 hover:text-white transition-colors">Accueil</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">À propos</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Compétences</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Portfolio</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-3">Légal</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Mentions légales</a></li>
+                            <li><a href="#" class="text-primary font-medium transition-colors">Politique de confidentialité</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Arnaud Cissé. Tous droits réservés.</p>
+                <p class="text-gray-400 text-sm">Dernière mise à jour : 2 mai 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const menuButton = document.querySelector('.md\\:hidden');
+            const mobileMenu = document.querySelector('.fixed.inset-0.bg-white');
+            
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+            });
+            
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
