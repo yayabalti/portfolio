@@ -342,8 +342,8 @@
                         <img src="images\3 eme projet jeux.png" class="w-full h-full object-cover object-top">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">jeux : ninja smoothis</h3>
-                        <p class="text-gray-600 mb-4">Ninja smoothisest un jeu d’arcade accessible après inscription obligatoire. Le joueur doit trancher des fruits pour cumuler des points, tout en évitant les virus. La difficulté augmente avec la vitesse et le nombre de virus. Un système de bonus permet de multiplier les points en fonction du score, et chaque partie se joue dans un temps limité. Les scores sont enregistrés et affichés en temps réel. </p>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">jeux : ninja smoothies</h3>
+                        <p class="text-gray-600 mb-4">Ninja Smoothies est un jeu d'arcade accessible après inscription. Le joueur doit trancher des fruits tout en évitant des obstacles. Chaque partie est limitée dans le temps et propose des niveaux de difficulté croissants, ainsi que des bonus pour augmenter les points.</p>
                         
                         
                         <div class="flex flex-wrap gap-2 mb-6">
@@ -603,8 +603,11 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div class="bg-white p-8 rounded-xl shadow-md">
+            
+
+                <!--version non fonctionelle -->
+                <!-- <div class="grid grid-cols-1 lg:grid-cols-2 gap-12"></div> -->
+                <!-- <div class="bg-white p-8 rounded-xl shadow-md">
                     <h3 class="text-xl font-semibold text-gray-900 mb-6">Envoyez-moi un message</h3>
                     <form>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -635,7 +638,55 @@
                             Envoyer le message
                         </button>
                     </form>
+                </div> -->
+
+                <!-- version focntionelle -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-6">Envoyez-moi un message</h3>
+                    <form action="https://formsubmit.co/cissearnaud@gmail.com" method="POST">
+            
+                        <!-- Champs cachés Formsubmit -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://portfolioproac.netlify.app/merci.html">
+                        <input type="hidden" name="_subject" value="Nouveau message depuis mon portfolio">
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nom</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/20 focus:border-primary" placeholder="Votre nom" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/20 focus:border-primary" placeholder="Votre email" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Sujet</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/20 focus:border-primary" placeholder="Sujet de votre message" required>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/20 focus:border-primary" placeholder="Votre message" required></textarea>
+                        </div>
+
+                        <div class="mb-6 flex items-center">
+                            <input type="checkbox" id="privacy" name="privacy" class="custom-checkbox" required>
+                            <label for="privacy" class="ml-3 text-sm text-gray-600">
+                                J'accepte la politique de confidentialité et le traitement de mes données.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="px-6 py-3 bg-primary text-white font-medium !rounded-button shadow-md hover:shadow-lg transition-all whitespace-nowrap">
+                            Envoyer le message
+                        </button>
+                    </form>
                 </div>
+
+
+                
 
                 <div>
                     <div class="bg-white p-8 rounded-xl shadow-md mb-8">
